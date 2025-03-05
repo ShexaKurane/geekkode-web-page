@@ -1,0 +1,50 @@
+.flex_in_row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.flex_in_column{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.titulo{
+    display: flex;
+    background-color: var(--light-grey);
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+form input{
+    background-color: var(--light-pink);
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--secondary-blue);
+
+
+
+
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    color: var(--black);
+
+
+}
+
+.texto-rojo{
+    color: var(--primary-red);
+}
+
+.texto-azul{
+    color: var(--primary-blue);
+}
