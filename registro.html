@@ -33,31 +33,31 @@
             </nav>
         </div>
     </section>
-    <div id="register_inputs" class="flex_" n_column>
-        <form>
+    <div id="register_inputs" class="flex_">
+        <form action="registro.php" method="POST">
             <label for="username"></label>
-            <input type="text" id="username" placeholder="Nombre de usuario">
-
+            <input type="text" id="username" name="username"  placeholder="Nombre de usuario">
+    
             <label for="email"></label>
-            <input type="text" id="email" placeholder="Email"></label>
-
+            <input type="text" id="email" name="email" placeholder="Email"></label>
+    
             <label for="password"></label>
-            <input type="password" id="password" placeholder="Contraseña">
-
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+    
             <label for="password"></label>
-            <input type="password" id="confirm_pass" placeholder="Confirmar contraseña">
-
-            <label for="submit"></label>
-            <input type="submit" id="register_subm" placeholder="Enviar">
-
+            <input type="password" id="confirm_pass" name="confirm_pass" placeholder="Confirmar contraseña">
+    
+            
             <label for="TerminosYCondiciones"> Estoy de acuerdo con los <span class="azul">terminos y condiciones</span>
-                <input type="checkbox" id="TyCCheckbox">
+            <input type="checkbox" id="TyCCheckbox">
+
+            <input type="submit" value="Registrarse">
         </form>
     </div>
     <div id="register_options" class="flex_in_ccolumn">
-
+    </div>
     <div class="flex-in_row">
-        _i" <p>O regístrate con...</p>>
+        <p>O regístrate con...</p>>
         <div>
             <div>
                 <img src="https://static.wikia.nocookie.net/google6724/images/7/74/512px-Google_Chrome_icon_%28September_2014%29.svg.png/revision/latest?cb=20180117042117&path-prefix=es"
@@ -71,15 +71,14 @@
             </div>
             <div>
                 <img src="https://avatars.githubusercontent.com/u/558429?s=280&v=4" alt="OmegaUp">
-                        <p>OmegaUp</p>
-                    </div>
-                    <div>
-                        <img src="https://static.xx.fbcdn.net/rsrc.php/v4/yG/r/pENh3y_2Pnw.png" alt="Facebook">
-                        <p>Facebook</p>
-                 </di   v>
-         </div>       
-       </div>     
-     </div>   
+                <p>OmegaUp</p>
+            </div>
+            <div>
+                <img src="https://static.xx.fbcdn.net/rsrc.php/v4/yG/r/pENh3y_2Pnw.png" alt="Facebook">
+                <p>Facebook</p>
+            </div>
+        </div>
+    </div>
   </body>      
 
     </html>                                                                            
