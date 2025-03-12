@@ -33,19 +33,30 @@ if($_POST['username'] && $_POST['email'] && $_POST['password'] && $_POST['confir
             exit();
         }
 
-        // $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-        // echo($email);
-        // if(filter_var($email, FILTER_VALIDATE_EMAIL)){
-        //     echo('Correo inválido');
-        //     exit();
-        // }
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        echo($email);
+        if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+            echo('Correo inválido');
+            exit();
+        }
 
         if(!preg_match('/^[a-zA-Z0-9]+$/', $username)){
             echo('Nombre de usuario inválido');
             exit();
         }
 
-        
+    $datos = 'Jefferson Gutierritos';//[$username, $email, $password];
+    // header('Location: perfil.php' );
+
+    echo "<form id='redirectForm' method='POST' action='perfil.php'>
+                <input type='hidden' name='username' value='$username'>
+                <input type='hidden' name='email' value='$email'>
+              </form>
+              <script type='text/javascript'>
+                document.getElementById('redirectForm').submit();
+              </script>";
+
+    exit;
 
     } else {
             
