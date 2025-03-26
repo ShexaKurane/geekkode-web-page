@@ -23,6 +23,7 @@
 form input{
     background-color: var(--light-pink);
 }
+
 nav{
     display: flex;
     flex-direction: row;
@@ -48,3 +49,33 @@ nav ul{
 .texto-azul{
     color: var(--primary-blue);
 }
+
+.geekkode-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: var(--light-grey);
+    color: var(--black);
+}
+
+.geekkode-logo{
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.geekkode-logo img{
+    width:100%;
+}
+
+.geekkode-nav-text{
+    margin: 5px 20px;
+}
+
+.geekkode-nav-burger{
+    display: none;
+}
+

@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px){
+    .geekkode-nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .geekkode-logo{
+        
+    }
+    
+    .geekkode-logo img{
+        
+    }
+    
+    .geekkode-nav-text{
+        display: none;
+    }
+
+    .geekkode-nav-burger{
+        display: block;
+    }
+}
